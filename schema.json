@@ -1,0 +1,84 @@
+{
+  "model": {
+    "type": "class",
+    "name": "ConfusionMatrix",
+    "method": "run",
+    "url": "main.js",
+    "worker": false,
+    "autorun": true
+  },
+  "design": {
+    "grid": [4, 8]
+  },
+  "inputs": [
+    {
+      "name": "True Positive",
+      "alias": "tp",
+      "type": "int",
+      "min": 0,
+      "max": 1000000,
+      "default": 0,
+      "columns": 6,
+      "reactive": true
+    },
+    {
+      "name": "False Negative",
+      "alias": "fn",
+      "type": "int",
+      "min": 0,
+      "max": 1000000,
+      "default": 0,
+      "columns": 6,
+      "reactive": true
+    },
+    {
+      "name": "False Positive",
+      "alias": "fp",
+      "type": "int",
+      "min": 0,
+      "max": 1000000,
+      "default": 0,
+      "columns":6,
+      "reactive": true
+    },
+    {
+      "name": "True Negative",
+      "alias": "tn",
+      "type": "int",
+      "min": 0,
+      "max": 1000000,
+      "default": 0,
+      "columns": 6,
+      "reactive": true
+    }
+  ],
+  "outputs": [
+    { 
+      "name": "Confusion Matrix",
+      "type": "svg"
+    },
+    {
+      "name": "Stats",
+      "type": "html"
+    }
+  ],
+  "page": {
+    "title": "Confusion Matrix Generator",
+    "url": "https://statsim.com/confusionmatrix",
+    "org": {
+      "name": "statsim",
+      "url": "https://statsim.com",
+      "description": "Modeling complex systems"
+    },
+    "ga": "UA-7770107-2",
+    "social": {
+      "twitter": "statsimcom",
+      "linkedin": "statsim",
+      "facebook": "statsim",
+      "github": "statsim/confusionmatrix"
+    }, 
+    "jsee": {
+      "version": "0.3.4"
+    }
+  }
+}
